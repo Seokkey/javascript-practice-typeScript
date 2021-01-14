@@ -6,7 +6,7 @@
 2. DevelopmentEnvironment 
 - https://github.com/Seokkey/javascript-practice-typeScript/blob/develop/2.DevelopmentEnvironment/2.DevelopmentEnvironment.md
 3. Typing 
-- https://github.com/Seokkey/javascript-practice-typeScript/blob/develop/3.Typing/2.Typing.md
+- https://github.com/Seokkey/javascript-practice-typeScript/blob/develop/3.Typing/3.Typing.md
 4. Class 
 - https://github.com/Seokkey/javascript-practice-typeScript/blob/develop/4.Class/4.Class.md
 5. Interface 
