@@ -20,3 +20,4 @@
 ## 참고
 - https://poiemaweb.com/typescript-introduction
 - https://www.typescriptlang.org/index.html
+- https://hyunseob.github.io/2017/12/12/typescript-type-inteference-and-type-assertion/
