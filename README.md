@@ -21,3 +21,4 @@
 - https://poiemaweb.com/typescript-introduction
 - https://www.typescriptlang.org/index.html
 - https://hyunseob.github.io/2017/12/12/typescript-type-inteference-and-type-assertion/
+- https://kjwsx23.tistory.com/522 [香格里拉]
