@@ -22,3 +22,4 @@
 - https://www.typescriptlang.org/index.html
 - https://hyunseob.github.io/2017/12/12/typescript-type-inteference-and-type-assertion/
 - https://kjwsx23.tistory.com/522 [香格里拉]
+- https://velog.io/@velopert/using-hooks-with-typescript
