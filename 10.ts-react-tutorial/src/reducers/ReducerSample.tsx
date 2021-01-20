@@ -3,7 +3,7 @@ import { useReducer } from 'react';
 
 type Color = 'red' | 'orange' | 'yellow';
 
-type State = {
+type SampleState = {
   count: number;
   text: string;
   color: Color;
@@ -16,7 +16,7 @@ type Action =
   | { des: 'SET_COLOR'; color: Color }
   | { des: 'TOGGLE_GOOD' };
 
-function reducer(state: State, action: Action): State {
+function reducer1(state: SampleState, action: Action): SampleState {
   switch (action.des) {
     case 'SET_COUNT':
       return {
@@ -44,31 +44,32 @@ function reducer(state: State, action: Action): State {
 }
 
 function ReducerSample() {
-  const [state, dispatch] = useReducer(reducer, {
+  // useReducer(?,?) 첫번째 파라미터는 리듀서 함수, 두번째 파라미터는 State 값
+  const [sampleState, dispathSampleState] = useReducer(reducer1, {
     count: 0,
     text: 'hello',
     color: 'red',
     isGood: true
   });
 
-  const setCount = () => dispatch({ des: 'SET_COUNT', count: 5 }); // count 를 넣지 않으면 에러발생
-  const setText = () => dispatch({ des: 'SET_TEXT', text: 'bye' }); // text 를 넣지 않으면 에러 발생
-  const setColor = () => dispatch({ des: 'SET_COLOR', color: 'orange' }); // orange 를 넣지 않으면 에러 발생
-  const toggleGood = () => dispatch({ des: 'TOGGLE_GOOD' });
+  const setCount = () => dispathSampleState({ des: 'SET_COUNT', count: 5 }); // count 를 넣지 않으면 에러발생
+  const setText = () => dispathSampleState({ des: 'SET_TEXT', text: 'bye' }); // text 를 넣지 않으면 에러 발생
+  const setColor = () => dispathSampleState({ des: 'SET_COLOR', color: 'orange' }); // orange 를 넣지 않으면 에러 발생
+  const toggleGood = () => dispathSampleState({ des: 'TOGGLE_GOOD' });
 
   return (
     <div>
       <p>
-        <code>count: </code> {state.count}
+        <code>count: </code> {sampleState.count}
       </p>
       <p>
-        <code>text: </code> {state.text}
+        <code>text: </code> {sampleState.text}
       </p>
       <p>
-        <code>color: </code> {state.color}
+        <code>color: </code> {sampleState.color}
       </p>
       <p>
-        <code>isGood: </code> {state.isGood ? 'true' : 'false'}
+        <code>isGood: </code> {sampleState.isGood ? 'true' : 'false'}
       </p>
       <div>
         <button onClick={setCount}>SET_COUNT</button>

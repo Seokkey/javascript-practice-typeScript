@@ -1,11 +1,19 @@
+// 새 할 일을 등록할 떄 사용
+
 import * as React from 'react';
 import { useState } from 'react';
+import { useTodosDispatch } from '../contexts/TodosContext';
+
 function TodoForm() {
   const [value, setValue] = useState('');
+  const dispatch = useTodosDispatch();
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: 새 항목 생성하기
+    dispatch({
+      type:"CREATE",
+      text:value,
+    });
     setValue('');
   };
 

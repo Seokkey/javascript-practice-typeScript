@@ -29,26 +29,26 @@
 /**
  * MyForm
  * */
-import * as React from 'react';
-import MyForm from './components/MyForm';
-
-const App: React.FC = () => {
-  const onSubmit = (form: { name: string; description: string }) => {
-    console.log(form);
-  };
-  return <MyForm onSubmit={onSubmit} />;
-};
-
-export default App;
+// import * as React from 'react';
+// import MyForm from './components/MyForm';
+//
+// const App: React.FC = () => {
+//   const onSubmit = (form: { name: string; description: string }) => {
+//     console.log(form);
+//   };
+//   return <MyForm onSubmit={onSubmit} />;
+// };
+//
+// export default App;
 
 /**
  * ReducerSample
  * */
-// import React from 'react';
-// import ReducerSample from './reducers/ReducerSample';
-//
-// const App: React.FC = () => {
-//   return <ReducerSample />;
-// };
-//
-// export default App;
+import React from 'react';
+import ReducerSample from './reducers/ReducerSample';
+
+const App: React.FC = () => {
+  return <ReducerSample />;
+};
+
+export default App;
