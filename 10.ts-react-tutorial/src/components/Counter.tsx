@@ -28,7 +28,7 @@
 //   const [info, setInformation] = useState<Information | null>(null); // 타입이 Information 이거나 null 일 경우
 //
 //   // Generics은  상태의 타입이 까다로운 구조를 가진 객체이거나 배열일 때 명시하는 것이 좋다.
-//   const [todos, setTodos] = useState<Todo[]>([]);
+//   const [index, setTodos] = useState<Todo[]>([]);
 //
 //   /**
 //    * 배열인 경우에는 위와 같이 빈 배열만 넣었을 때 해당 배열이 어떤 타입으로 이루어진 배열인지 추론 할 수 없기 때문에 Generics 를 명시해야 한다.
