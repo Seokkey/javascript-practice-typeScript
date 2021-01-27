@@ -1,5 +1,5 @@
 // import { useSelector, useDispatch } from 'react-redux';
-// import { RootState } from '../modules';
+// import { RootState } from '../redux';
 // import { increase, decrease, increaseBy } from '../modules/counter';
 // import { useCallback } from 'react';
 //
